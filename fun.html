@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fun Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="site-nav-root"></div>
+    <script src="include-nav.js" defer></script>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Fun Section</h2>
+      <p>my progect was the fun website! This is a website with games, quizes, songs, and puzzles. My role was the creative director.  I helped make the personality quizes and songs, I also helped with disigning the layout and the general feel of the website.</p>
+      <p>Visit the site: <a href="http://thefunwebsite.com" target="_blank" rel="noopener noreferrer">thefunwebsite.com</a></p>
+    </section>
+
+    <section class="card">
+      <img src="Visually searched image.png" alt="Fun website image" class="feature-image" onclick="togglePastelStripedBackground()">
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with joy 🎉</p>
+  </footer>
+
+  <script>
+    function togglePastelStripedBackground() {
+      document.body.classList.toggle('striped-background-pastel');
+    }
+  </script>
+</body>
+</html>

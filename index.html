@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abigail's Cat & Book World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <header>
+    <div id="site-nav-root"></div>
+    <script src="include-nav.js" defer></script>
+  </header>
+
+  <main>
+    <section class="card" id="section-1">
+      <h2>Welcome!</h2>
+      <p>
+        hi my name is abigail! I love cats, baking, reading and art! click on the pictures to change the backround!
+      </p>
+    </section>
+
+    <section class="card">
+      <img src="1382539767391.jpeg" alt="Home page image" class="feature-image" onclick="toggleBlueTanBackground()">
+    </section>
+
+    <section class="card" id="section-2">
+      <img src="1800x1200_what_to_know_about_norwegian_forest_cats_ref_guide.jpg.webp" alt="Norwegian Forest Cats reference guide" class="feature-image" onclick="toggleWarmStripedBackground()">
+    </section>
+
+    <section class="card" id="section-3">
+      <img src="The-Makerista-Library-Burgundy-Radicchio-Leaf-Brass-Sconces-Books-Traditional-Modern-IMG_2547.jpg" alt="Burgundy library bookshelf with brass sconces" class="feature-image bookshelf-image" onclick="toggleDarkStripedBackground()">
+    </section>
+
+    <section class="card">
+      <img src="Acrylics.jpg.webp" alt="Acrylic art" class="feature-image" onclick="toggleGrayWhiteBackground()">
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made with paws and pages 🐾📖</p>
+  </footer>
+
+  <script>
+    function toggleBlueTanBackground() {
+      document.body.classList.toggle('striped-background-blue-tan');
+    }
+
+    function toggleWarmStripedBackground() {
+      document.body.classList.toggle('striped-background-warm');
+    }
+
+    function toggleDarkStripedBackground() {
+      document.body.classList.toggle('striped-background-dark');
+    }
+
+    function toggleGrayWhiteBackground() {
+      document.body.classList.toggle('striped-background-gray-white');
+    }
+  </script>
+</body>
+</html>
